@@ -9,6 +9,7 @@
 #' @param dlist a length-\eqn{N} list of representation matrices. Note that all matrices must have same number of rows that are assumed to be matched observations across different representations.
 #' @param ... optional parameters including\describe{
 #' \item{centering}{a logical to apply centering (default:\code{TRUE}).}
+#' \item{method}{type of summary statistics of the goodness of fit for CCA, either \code{"pillai"} or \code{"yanai"} (default: \code{"pillai"}).}
 #' \item{proportion}{threshold of the amount of variance explained for denoising (default: \eqn{0.95}).}
 #' }
 #' 
@@ -62,6 +63,12 @@ SVCCA <- function(dlist, ...){
   } else {
     par_ratio = 0.95
   }
+  if ("method"%in%pnames){
+    tmp_method = tolower(as.character(params$method))
+    par_method = match.arg(tmp_method, c("yanai","pillai"))
+  } else {
+    par_method = "pillai"
+  }
   
   # ---------------------------------------------------------------
   # COMPUTE
@@ -73,15 +80,23 @@ SVCCA <- function(dlist, ...){
     vec_Q[[n]] = SVCCA_extractQ(dlist[[n]], par_center, par_ratio)
   }
   
-  # iterate : diagonal ------------------------------- use mean : pillai￩
+  # iterate : diagonal ------------------------------- use mean : pillai
   for (n in 1:N){
-    output[n,n] = CCA_pillai(vec_Q[[n]], vec_Q[[n]])
+    if (identical(par_method, "yanai")){
+      output[n,n] = CCA_yanai(vec_Q[[n]], vec_Q[[n]])
+    } else {
+      output[n,n] = CCA_pillai(vec_Q[[n]], vec_Q[[n]])      
+    }
   }
   
   # iterate : off-diagonal
   for (i in 1:(N-1)){
     for (j in (i+1):N){
-      output[i,j] <- output[j,i] <- CCA_pillai(vec_Q[[i]], vec_Q[[j]])
+      if (identical(par_method, "pillai")){
+        output[i,j] <- output[j,i] <- CCA_pillai(vec_Q[[i]], vec_Q[[j]])  
+      } else {
+        output[i,j] <- output[j,i] <- CCA_yanai(vec_Q[[i]], vec_Q[[j]])  
+      }
     }
   }
   

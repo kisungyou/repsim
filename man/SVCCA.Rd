@@ -11,6 +11,7 @@ SVCCA(dlist, ...)
 
 \item{...}{optional parameters including\describe{
 \item{centering}{a logical to apply centering (default:\code{TRUE}).}
+\item{method}{type of summary statistics of the goodness of fit for CCA, either \code{"pillai"} or \code{"yanai"} (default: \code{"pillai"}).}
 \item{proportion}{threshold of the amount of variance explained for denoising (default: \eqn{0.95}).}
 }}
 }
