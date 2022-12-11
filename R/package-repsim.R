@@ -20,6 +20,8 @@
 #' @docType package
 #' @noRd
 #' @import Rdpack
+#' @importFrom RSpectra svds
+#' @importFrom lpSolve lp.assign
 #' @importFrom stats cov
 #' @importFrom fields imagePlot
 #' @importFrom Rcpp evalCpp

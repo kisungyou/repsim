@@ -47,6 +47,40 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// cpp_GSR_procrustes
+arma::mat cpp_GSR_procrustes(arma::cube& data3d);
+RcppExport SEXP _repsim_cpp_GSR_procrustes(SEXP data3dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::cube& >::type data3d(data3dSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_GSR_procrustes(data3d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_GSR_kendall
+arma::mat cpp_GSR_kendall(arma::cube& data3d);
+RcppExport SEXP _repsim_cpp_GSR_kendall(SEXP data3dSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::cube& >::type data3d(data3dSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_GSR_kendall(data3d));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_GSL
+arma::mat cpp_GSL(arma::cube& data3d, double alpha);
+RcppExport SEXP _repsim_cpp_GSL(SEXP data3dSEXP, SEXP alphaSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::cube& >::type data3d(data3dSEXP);
+    Rcpp::traits::input_parameter< double >::type alpha(alphaSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_GSL(data3d, alpha));
+    return rcpp_result_gen;
+END_RCPP
+}
 // cpp_LR
 arma::mat cpp_LR(arma::field<arma::mat>& config_list, bool centering);
 RcppExport SEXP _repsim_cpp_LR(SEXP config_listSEXP, SEXP centeringSEXP) {
@@ -104,6 +138,9 @@ static const R_CallMethodDef CallEntries[] = {
     {"_repsim_KernelLinear", (DL_FUNC) &_repsim_KernelLinear, 1},
     {"_repsim_KernelRBF", (DL_FUNC) &_repsim_KernelRBF, 3},
     {"_repsim_src_orthobase", (DL_FUNC) &_repsim_src_orthobase, 2},
+    {"_repsim_cpp_GSR_procrustes", (DL_FUNC) &_repsim_cpp_GSR_procrustes, 1},
+    {"_repsim_cpp_GSR_kendall", (DL_FUNC) &_repsim_cpp_GSR_kendall, 1},
+    {"_repsim_cpp_GSL", (DL_FUNC) &_repsim_cpp_GSL, 2},
     {"_repsim_cpp_LR", (DL_FUNC) &_repsim_cpp_LR, 2},
     {"_repsim_cpp_DP", (DL_FUNC) &_repsim_cpp_DP, 2},
     {"_repsim_cpp_HSIC", (DL_FUNC) &_repsim_cpp_HSIC, 4},

@@ -13,6 +13,18 @@ src_orthobase <- function(X, centering) {
     .Call('_repsim_src_orthobase', PACKAGE = 'repsim', X, centering)
 }
 
+cpp_GSR_procrustes <- function(data3d) {
+    .Call('_repsim_cpp_GSR_procrustes', PACKAGE = 'repsim', data3d)
+}
+
+cpp_GSR_kendall <- function(data3d) {
+    .Call('_repsim_cpp_GSR_kendall', PACKAGE = 'repsim', data3d)
+}
+
+cpp_GSL <- function(data3d, alpha) {
+    .Call('_repsim_cpp_GSL', PACKAGE = 'repsim', data3d, alpha)
+}
+
 cpp_LR <- function(config_list, centering) {
     .Call('_repsim_cpp_LR', PACKAGE = 'repsim', config_list, centering)
 }

@@ -30,7 +30,7 @@ Currently, our implementation supports linear and RBF kernels.
 ## load the 'twoclass' data
 data("twoclass", package="repsim")
 
-# compare linear & rbf kernels
+## compare linear & rbf kernels
 HSIClin <- HSIC(twoclass$data, kernel="linear")
 HSICrbf <- HSIC(twoclass$data, kernel="rbf")
 
