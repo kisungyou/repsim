@@ -1,0 +1,15 @@
+{
+  "hash": "8b0c0c0ccec4a7a8df871e6d749e23fb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Install\n---\n\n\n\n\n::: {.panel-tabset}\n## Python\n\n\n::: {.cell}\n\n```{.python .cell-code}\n# activate your conda env\nconda activate repsim\n\n# install from your repo (dev mode)\npip install -e path/to/repsim-python\n```\n:::\n\n\n---\n\n## R\n\n::: {.cell}\n\n```{.r .cell-code}\n# from the repsim-R project root\ndevtools::install()  # or: R CMD INSTALL .\n```\n:::\n\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

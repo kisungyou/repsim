@@ -1,0 +1,12 @@
+---
+title: repsim
+---
+
+`repsim` provides **representational similarity** metrics implemented in C++ (Eigen),
+with thin bindings to **Python** (pybind11 + scikit-build-core) and **R** (RcppEigen).
+
+- Dot Product similarity (Kornblith et al., 2019)
+- HSIC (Gretton et al., 2005) with linear / RBF (median, mean, dual-median)
+- (Future) CKA, CCA (Yanai / Pillai), SVCCA
+
+Use the **Install** and **Getting Started** pages, or jump into the **API**.

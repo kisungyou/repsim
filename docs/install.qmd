@@ -1,0 +1,34 @@
+---
+title: Install
+---
+
+```{r}
+#| include: false
+library(reticulate)
+use_python("/Users/kyou/miniconda3/envs/repsim/bin/python", required = TRUE)
+py_config()  # prints which Python is used (for sanity check)
+```
+
+
+::: {.panel-tabset}
+## Python
+
+```{python}
+#| eval: false
+# activate your conda env
+conda activate repsim
+
+# install from your repo (dev mode)
+pip install -e path/to/repsim-python
+```
+
+---
+
+## R
+```{r}
+#| eval: false
+
+# from the repsim-R project root
+devtools::install()  # or: R CMD INSTALL .
+```
+:::

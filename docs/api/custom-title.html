@@ -1,0 +1,12 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Read the 'displaytitle' front-matter value from this page
+        var displayTitle = "{{< meta displaytitle >}}";
+
+        // Only replace if the page actually provides displaytitle
+        if (displayTitle && displayTitle !== "null" && displayTitle !== "") {
+            var h1 = document.querySelector('.quarto-title .title');
+            if (h1) h1.textContent = displayTitle;
+        }
+    });
+</script>
