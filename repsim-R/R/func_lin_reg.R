@@ -6,7 +6,7 @@
 #' 
 #' @param mats A list of length \eqn{M} containing data matrices of size \eqn{(n_\mathrm{samples},\, p_k)}. All matrices must share the same number of rows for matching samples.
 #'
-#' @return An \eqn{M \times M} matrix of symmetric dot-product similarities.
+#' @return An \eqn{M \times M} matrix of symmetric similarities.
 #' 
 #' @examples
 #' \donttest{

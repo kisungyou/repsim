@@ -10,7 +10,7 @@ lin_reg(mats)
 \item{mats}{A list of length \eqn{M} containing data matrices of size \eqn{(n_\mathrm{samples},\, p_k)}. All matrices must share the same number of rows for matching samples.}
 }
 \value{
-An \eqn{M \times M} matrix of symmetric dot-product similarities.
+An \eqn{M \times M} matrix of symmetric similarities.
 }
 \description{
 Compute pairwise linear–regression fit between multiple representations. 

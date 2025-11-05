@@ -374,7 +374,7 @@ namespace repsim {
     std::vector<Mat> Qs; Qs.reserve(M);
     std::vector<double> X_sqnorms; X_sqnorms.reserve(M);
     for (Index i=0; i<M; i++){
-      Qs.emplace_back(util_ONB(Xs[i]));
+      Qs.emplace_back(util_centering(util_ONB(Xs[i]))); // review-centering
       X_sqnorms.emplace_back((Xs[i]).squaredNorm());
     }
     

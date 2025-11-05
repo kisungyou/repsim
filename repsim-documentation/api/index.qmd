@@ -1,0 +1,34 @@
+---
+title: "API Reference"
+sidebar: api
+format:
+    html:
+        toc: true
+        toc-location: right
+        page-layout: full
+execute:
+  enabled: false
+jupyter: false
+---
+
+Welcome to the `repsim` API reference.
+
+This section documents Python functions and utilities you can call directly.
+Use the left sidebar to navigate.
+
+### Alignment
+
+| Name | Description |
+| ---- | ----------- |
+| [lin_reg](family_alignment/LinearRegression.qmd) | Linear Regression |
+
+### CCA
+
+| Name | Description |
+| ---- | ----------- |
+| [cca](family_cca/CCA.qmd) | Canonical Correlation Analysis |
+| [pwcca](family_cca/PWCCA.qmd) | Projection-Weighted Canonical Correlation Analysis |
+| [svcca](family_cca/SVCCA.qmd) | Singular Vector Canonical Correlation Analysis |
+
+
+

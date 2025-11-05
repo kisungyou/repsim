@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "repsim"
+  site-url: https://kisungyou.com/repsim
+  navbar:
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Install"
+        href: install.qmd
+      - text: "Getting Started"
+        href: getting-started.qmd
+      - text: "API"
+        href: api/index.qmd        # <— landing page for API docs
+  sidebar:
+    - id: api
+      title: "API Reference"
+      contents:
+        - text: "API Home"
+          href: api/index.qmd
+        - section: "Alignment"
+          contents:
+            - api/family_alignment/LinearRegression.qmd
+        - section: "CCA"
+          contents:
+            - api/family_cca/CCA.qmd
+            - api/family_cca/PWCCA.qmd
+            - api/family_cca/SVCCA.qmd
+        - section: "Utilities"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    anchor-sections: true
+
+# run code and cache outputs
+execute:
+  freeze: auto
+  cache: true
+  echo: true
+  python: /Users/kyou/miniconda3/envs/repsim/bin/python
+  r: /usr/local/bin/R
+  RETICULATE_PYTHON: /Users/kyou/miniconda3/envs/repsim/bin/python
