@@ -600,7 +600,7 @@ Ramsay, J. O., Jos ten Berge, and G. P. H. Styan. 1984. <span>“Matrix Correlat
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/kisungyou\.com\/repsim");
+        var filterRegex = new RegExp("https:\/\/www\.kisungyou\.com\/repsim");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
