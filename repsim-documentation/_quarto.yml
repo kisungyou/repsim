@@ -18,6 +18,8 @@ website:
   sidebar:
     - id: api
       title: "API Reference"
+      style: "docked"     # 👈 makes it docked
+      search: true        # 👈 adds search box
       contents:
         - text: "API Home"
           href: api/index.qmd
@@ -29,15 +31,15 @@ website:
             - api/family_cca/CCA.qmd
             - api/family_cca/PWCCA.qmd
             - api/family_cca/SVCCA.qmd
-        - section: "Utilities"
 
 format:
   html:
-    theme: cosmo
+    theme: lux
     toc: true
     toc-depth: 3
     code-copy: true
     anchor-sections: true
+
 
 # run code and cache outputs
 execute:
