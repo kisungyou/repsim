@@ -1,0 +1,71 @@
+---
+title: Installation
+toc: false
+---
+
+
+
+The easiest way to install `repsim` is through official repositories such as **PyPI** and **CRAN**.
+
+
+::: {.panel-tabset group="language"}
+### Python
+```{bash}
+#| echo: true
+#| eval: false
+pip install -U repsim
+```
+
+### R
+```{r}
+#| echo: true
+#| eval: false
+install.packages("repsim")
+```
+:::
+
+The development version can also be installed from source hosted on GitHub:
+
+
+::: {.panel-tabset group="language"}
+### Python
+```{bash}
+#| echo: true
+#| eval: false
+pip install git+https://github.com/kisungyou/repsim.git#subdirectory=repsim-Python
+```
+
+### R
+```{r}
+#| echo: true
+#| eval: false
+remotes::install_github("kisungyou/repsim", subdir = "repsim-R")
+```
+:::
+
+## Dependencies
+
+`repsim` is build on a shared `C++17` computational backend, ensuring consistent performance across Python and R. To install and use `repsim`, your system should have 
+
+- A `C++17`-compatible compiler (e.g., GCC ≥ 9, Clang ≥ 10, or MSVC ≥ 2019)
+- CMake ≥ 3.20 (required only when building from source)
+- Standard build tools available on Linux, macOS, and Windows
+
+For language-specific requirements, see below:
+
+::: {.panel-tabset group="language"}
+### Python
+
+Requires a modern Python environment (≥ 3.8) and the following build dependencies:
+
+- `scikit-build-core` ≥ 0.10 - build backend integrating CMake with PEP 517
+- `pybind11` ≥ 2.11 -Python/C++ interface
+- `numpy` ≥ 1.23 - array and numerical operations
+- `packaging` ≥ 23.0 - version and metadata management
+
+### R
+
+Requires R ≥ 4.2 and a working `C++17` toolchain. All necessary C++ headers (`Rcpp`, `Eigen`) are bundled and linked automatically and no additional R dependencies need to be installed manually.
+:::
+
+

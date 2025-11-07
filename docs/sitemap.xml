@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.kisungyou.com/repsim/api/family_alignment/LinearRegression.html</loc>
-    <lastmod>2025-11-05T14:15:33.429Z</lastmod>
+    <loc>https://www.kisungyou.com/repsim/installation.html</loc>
+    <lastmod>2025-11-06T23:34:10.158Z</lastmod>
   </url>
   <url>
-    <loc>https://www.kisungyou.com/repsim/api/family_cca/PWCCA.html</loc>
-    <lastmod>2025-11-04T17:46:24.017Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.kisungyou.com/repsim/api/family_cca/SVCCA.html</loc>
-    <lastmod>2025-11-05T14:29:27.965Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.kisungyou.com/repsim/install.html</loc>
-    <lastmod>2025-10-28T01:59:36.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.kisungyou.com/repsim/index.html</loc>
-    <lastmod>2025-10-27T21:39:19.912Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.kisungyou.com/repsim/getting-started.html</loc>
-    <lastmod>2025-10-27T21:41:32.478Z</lastmod>
+    <loc>https://www.kisungyou.com/repsim/api/index.html</loc>
+    <lastmod>2025-11-05T14:14:33.181Z</lastmod>
   </url>
   <url>
     <loc>https://www.kisungyou.com/repsim/api/family_cca/CCA.html</loc>
     <lastmod>2025-11-05T14:30:01.177Z</lastmod>
   </url>
   <url>
-    <loc>https://www.kisungyou.com/repsim/api/index.html</loc>
-    <lastmod>2025-11-05T14:14:33.181Z</lastmod>
+    <loc>https://www.kisungyou.com/repsim/index.html</loc>
+    <lastmod>2025-11-06T23:31:52.849Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.kisungyou.com/repsim/examples.html</loc>
+    <lastmod>2025-11-06T23:35:18.794Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.kisungyou.com/repsim/api/family_cca/SVCCA.html</loc>
+    <lastmod>2025-11-05T14:29:27.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.kisungyou.com/repsim/api/family_cca/PWCCA.html</loc>
+    <lastmod>2025-11-04T17:46:24.017Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.kisungyou.com/repsim/api/family_alignment/LinearRegression.html</loc>
+    <lastmod>2025-11-05T14:15:33.429Z</lastmod>
   </url>
 </urlset>

@@ -46,14 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "overlay",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -70,9 +69,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="style_landing.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -96,16 +96,23 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./install.html"> 
-<span class="menu-text">Install</span></a>
+    <a class="nav-link" href="./installation.html"> 
+<span class="menu-text">Installation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./getting-started.html"> 
-<span class="menu-text">Getting Started</span></a>
+    <a class="nav-link" href="./examples.html"> 
+<span class="menu-text">Examples</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./api/index.html"> 
 <span class="menu-text">API</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/kisungyou/repsim"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -118,31 +125,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="hero-title title display-7"></h1></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">repsim</h1>
+
+
+
+<div class="hero">
+<section id="section" class="level1 hero-title container">
+
+<p>Measures of Representational Similarity in Python and R</p>
+<div class="hero-badges">
+<p><a href="https://pypi.org/project/repsim/" target="_blank"> <img src="https://img.shields.io/pypi/v/repsim.svg?color=3776ab&amp;label=PyPI&amp;logo=python&amp;logoColor=white" alt="PyPI Version"> </a> <a href="https://cran.r-project.org/package=repsim" target="_blank"> <img src="https://img.shields.io/cran/v/repsim?color=276DC3&amp;label=CRAN&amp;logo=R&amp;logoColor=white" alt="CRAN Version"> </a> <a href="https://github.com/kisungyou/repsim" target="_blank"> <img src="https://img.shields.io/github/stars/kisungyou/repsim?color=333&amp;label=GitHub%20stars&amp;logo=github" alt="GitHub Stars"> </a> <a href="https://opensource.org/licenses/MIT" target="_blank"> <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"> </a></p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+</section>
+</div>
+<hr class="hero-divider">
 <p><code>repsim</code> provides <strong>representational similarity</strong> metrics implemented in C++ (Eigen), with thin bindings to <strong>Python</strong> (pybind11 + scikit-build-core) and <strong>R</strong> (RcppEigen).</p>
 <ul>
 <li>Dot Product similarity (Kornblith et al., 2019)</li>

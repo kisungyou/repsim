@@ -1,0 +1,87 @@
+/* ---------- Layout ---------- */
+.container-narrow {
+    max-width: 850px;
+    /* narrower for Lux visual balance */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 0rem 0rem 0rem;
+    /* ↓ reduced top/bottom spacing */
+}
+
+/* ---------- Headline ---------- */
+.hero-title {
+    font-family: inherit;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    font-size: clamp(2.1rem, 5.5vw, 3.8rem);
+    margin-top: 0;
+    /* remove excess space above */
+    margin-bottom: 0.6rem;
+
+    background: linear-gradient(90deg,
+            color-mix(in srgb, var(--bs-primary) 88%, white 12%),
+            color-mix(in srgb, var(--bs-info) 88%, white 12%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 0.01px rgba(0, 0, 0, 0.01),
+        0.5px 0.5px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Dark-mode gradient */
+:root[data-bs-theme="dark"] .hero-title {
+    background: linear-gradient(90deg,
+            color-mix(in srgb, var(--bs-primary) 92%, black 8%),
+            color-mix(in srgb, var(--bs-cyan) 92%, black 8%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ---------- Buttons ---------- */
+.hero-ctas .btn {
+    padding: 0.7rem 1.1rem;
+    border-radius: 0.8rem;
+}
+
+/* ---------- Badges ---------- */
+.hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem 1rem;
+    margin-top: 1rem;
+}
+
+.hero-badges img {
+    height: 24px;
+    transition: transform 0.15s ease-in-out, opacity 0.15s;
+}
+
+.hero-badges img:hover {
+    transform: scale(1.08);
+    opacity: 0.85;
+}
+
+/* ---------- Divider ---------- */
+.hero-divider {
+    border: 0;
+    border-top: 1px solid var(--bs-border-color);
+    margin: 1.5rem auto 1rem;
+    width: 100%;
+    max-width: none;
+    opacity: 0.5;
+}
+
+/* ---------- Utilities ---------- */
+@media (min-width: 768px) {
+    .sm-hide {
+        display: none;
+    }
+}

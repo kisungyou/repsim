@@ -1,0 +1,15 @@
+{
+  "hash": "e760a99ad22b1707296d3a00d2f34fbb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: repsim\n---\n\n`repsim` provides **representational similarity** metrics implemented in C++ (Eigen),\nwith thin bindings to **Python** (pybind11 + scikit-build-core) and **R** (RcppEigen).\n\n- Dot Product similarity (Kornblith et al., 2019)\n- HSIC (Gretton et al., 2005) with linear / RBF (median, mean, dual-median)\n- (Future) CKA, CCA (Yanai / Pillai), SVCCA\n\nUse the **Install** and **Getting Started** pages, or jump into the **API**.\n\n\n\n## Dependencies\n\n`repsim` is build on a shared `C++17` computational backend, ensuring consistent performance across Python and R. To install and use `repsim`, your system should have \n\n- A `C++17`-compatible compiler (e.g., GCC ≥ 9, Clang ≥ 10, or MSVC ≥ 2019)\n- CMake ≥ 3.20 (required only when building from source)\n- Standard build tools available on Linux, macOS, and Windows\n\nFor language-specific requirements, see below:\n\n::: {.panel-tabset group=\"language\"}\n### Python\n\nRequires a modern Python environment (≥ 3.8) and the following build dependencies:\n\n- `scikit-build-core` ≥ 0.10 - build backend integrating CMake with PEP 517\n- `pybind11` ≥ 2.11 -Python/C++ interface\n- `numpy` ≥ 1.23 - array and numerical operations\n- `packaging` ≥ 23.0 - version and metadata management\n\n### R\n\nRequires R ≥ 4.2 and a working `C++17` toolchain. All necessary C++ headers (`Rcpp`, `Eigen`) are bundled and linked automatically and no additional R dependencies need to be installed manually.\n:::\n\n## Installation\n\nThe easiest way to install `repsim` is through official repositories such as **PyPI** and **CRAN**.\n\n\n::: {.panel-tabset group=\"language\"}\n### Python\n\n::: {.cell}\n\n```{.bash .cell-code}\npip install -U repsim\n```\n:::\n\n\n### R\n\n::: {.cell}\n\n```{.r .cell-code}\ninstall.packages(\"repsim\")\n```\n:::\n\n:::\n\nThe development version can also be installed from source hosted on GitHub:\n\n\n::: {.panel-tabset group=\"language\"}\n### Python\n\n::: {.cell}\n\n```{.bash .cell-code}\npip install git+https://github.com/kisungyou/repsim.git#subdirectory=repsim-Python\n```\n:::\n\n\n### R\n\n::: {.cell}\n\n```{.r .cell-code}\nremotes::install_github(\"kisungyou/repsim\", subdir = \"repsim-R\")\n```\n:::\n\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

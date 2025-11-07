@@ -1,6 +1,37 @@
 ---
-title: repsim
+title: ""
+toc: false
+format:
+    html:
+        css: style_landing.css
 ---
+
+::: {.hero}
+<div class="container">
+
+# { .hero-title }
+Measures of Representational Similarity in Python and R
+
+<div class="hero-badges">
+  <a href="https://pypi.org/project/repsim/" target="_blank">
+    <img src="https://img.shields.io/pypi/v/repsim.svg?color=3776ab&label=PyPI&logo=python&logoColor=white" alt="PyPI Version">
+  </a>
+  <a href="https://cran.r-project.org/package=repsim" target="_blank">
+    <img src="https://img.shields.io/cran/v/repsim?color=276DC3&label=CRAN&logo=R&logoColor=white" alt="CRAN Version">
+  </a>
+  <a href="https://github.com/kisungyou/repsim" target="_blank">
+    <img src="https://img.shields.io/github/stars/kisungyou/repsim?color=333&label=GitHub%20stars&logo=github" alt="GitHub Stars">
+  </a>
+  <a href="https://opensource.org/licenses/MIT" target="_blank">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License">
+  </a>
+</div>
+
+</div>
+:::
+
+<hr class="hero-divider">
+
 
 `repsim` provides **representational similarity** metrics implemented in C++ (Eigen),
 with thin bindings to **Python** (pybind11 + scikit-build-core) and **R** (RcppEigen).
@@ -10,3 +41,5 @@ with thin bindings to **Python** (pybind11 + scikit-build-core) and **R** (RcppE
 - (Future) CKA, CCA (Yanai / Pillai), SVCCA
 
 Use the **Install** and **Getting Started** pages, or jump into the **API**.
+
+

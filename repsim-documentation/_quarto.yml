@@ -5,16 +5,23 @@ project:
 website:
   title: "repsim"
   site-url: https://www.kisungyou.com/repsim
+  search:
+    location: navbar
+    type: textbox
   navbar:
     left:
       - text: "Overview"
         href: index.qmd
-      - text: "Install"
-        href: install.qmd
-      - text: "Getting Started"
-        href: getting-started.qmd
+      - text: "Installation"
+        href: installation.qmd
+      - text: "Examples"
+        href: examples.qmd
       - text: "API"
         href: api/index.qmd        # <— landing page for API docs
+    right:
+      - icon: github
+        href: https://github.com/kisungyou/repsim
+        aria-label: GitHub
   sidebar:
     - id: api
       title: "API Reference"
