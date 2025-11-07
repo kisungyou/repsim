@@ -18,7 +18,7 @@
     "href": "api/index.html",
     "title": "API Reference",
     "section": "",
-    "text": "Welcome to the repsim API reference.\nThis section documents Python functions and utilities you can call directly. Use the left sidebar to navigate.\n\nAlignment\n\n\n\nName\nDescription\n\n\n\n\nlin_reg\nLinear Regression\n\n\n\n\n\nCCA\n\n\n\nName\nDescription\n\n\n\n\ncca\nCanonical Correlation Analysis\n\n\npwcca\nProjection-Weighted Canonical Correlation Analysis\n\n\nsvcca\nSingular Vector Canonical Correlation Analysis",
+    "text": "Welcome to the repsim API reference.\nThis section documents Python functions and utilities you can call directly. Use the left sidebar to navigate.\n\nAlignment\n\n\n\n\n\n\n\n\nName\nDescription\n\n\n\n\nlin_reg\nLinear Regression\n\n\n\n\n\n\nCCA\n\n\n\n\n\n\n\n\nName\nDescription\n\n\n\n\ncca\nCanonical Correlation Analysis\n\n\npwcca\nProjection-Weighted Canonical Correlation Analysis\n\n\nsvcca\nSingular Vector Canonical Correlation Analysis",
     "crumbs": [
       "Overview",
       "API Home"

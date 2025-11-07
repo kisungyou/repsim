@@ -18,17 +18,20 @@ Use the left sidebar to navigate.
 
 ### Alignment
 
+::: {tbl-colwidths="[1,4]"}
 | Name | Description |
 | ---- | ----------- |
 | [lin_reg](family_alignment/LinearRegression.qmd) | Linear Regression |
+:::
 
 ### CCA
 
+::: {tbl-colwidths="[1,4]"}
 | Name | Description |
 | ---- | ----------- |
 | [cca](family_cca/CCA.qmd) | Canonical Correlation Analysis |
 | [pwcca](family_cca/PWCCA.qmd) | Projection-Weighted Canonical Correlation Analysis |
 | [svcca](family_cca/SVCCA.qmd) | Singular Vector Canonical Correlation Analysis |
-
+:::
 
 
