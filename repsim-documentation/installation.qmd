@@ -43,9 +43,9 @@ remotes::install_github("kisungyou/repsim", subdir = "repsim-R")
 ```
 :::
 
-## Dependencies
+### Dependencies
 
-`repsim` is build on a shared `C++17` computational backend, ensuring consistent performance across Python and R. To install and use `repsim`, your system should have 
+`repsim` is built on a shared `C++17` computational backend, ensuring consistent performance across Python and R. To install and use `repsim`, your system should have 
 
 - A `C++17`-compatible compiler (e.g., GCC ≥ 9, Clang ≥ 10, or MSVC ≥ 2019)
 - CMake ≥ 3.20 (required only when building from source)

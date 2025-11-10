@@ -4,14 +4,7 @@
     "href": "installation.html",
     "title": "Installation",
     "section": "",
-    "text": "The easiest way to install repsim is through official repositories such as PyPI and CRAN.\nThe development version can also be installed from source hosted on GitHub:"
-  },
-  {
-    "objectID": "installation.html#dependencies",
-    "href": "installation.html#dependencies",
-    "title": "Installation",
-    "section": "Dependencies",
-    "text": "Dependencies\nrepsim is build on a shared C++17 computational backend, ensuring consistent performance across Python and R. To install and use repsim, your system should have\n\nA C++17-compatible compiler (e.g., GCC ≥ 9, Clang ≥ 10, or MSVC ≥ 2019)\nCMake ≥ 3.20 (required only when building from source)\nStandard build tools available on Linux, macOS, and Windows\n\nFor language-specific requirements, see below:\n\nPythonR\n\n\nRequires a modern Python environment (≥ 3.8) and the following build dependencies:\n\nscikit-build-core ≥ 0.10 - build backend integrating CMake with PEP 517\npybind11 ≥ 2.11 -Python/C++ interface\nnumpy ≥ 1.23 - array and numerical operations\npackaging ≥ 23.0 - version and metadata management\n\n\n\nRequires R ≥ 4.2 and a working C++17 toolchain. All necessary C++ headers (Rcpp, Eigen) are bundled and linked automatically and no additional R dependencies need to be installed manually."
+    "text": "The easiest way to install repsim is through official repositories such as PyPI and CRAN.\n\nPythonR\n\n\n\npip install -U repsim\n\n\n\n\ninstall.packages(\"repsim\")\n\n\n\n\nThe development version can also be installed from source hosted on GitHub:\n\nPythonR\n\n\n\npip install git+https://github.com/kisungyou/repsim.git#subdirectory=repsim-Python\n\n\n\n\nremotes::install_github(\"kisungyou/repsim\", subdir = \"repsim-R\")\n\n\n\n\n\nDependencies\nrepsim is built on a shared C++17 computational backend, ensuring consistent performance across Python and R. To install and use repsim, your system should have\n\nA C++17-compatible compiler (e.g., GCC ≥ 9, Clang ≥ 10, or MSVC ≥ 2019)\nCMake ≥ 3.20 (required only when building from source)\nStandard build tools available on Linux, macOS, and Windows\n\nFor language-specific requirements, see below:\n\nPythonR\n\n\nRequires a modern Python environment (≥ 3.8) and the following build dependencies:\n\nscikit-build-core ≥ 0.10 - build backend integrating CMake with PEP 517\npybind11 ≥ 2.11 -Python/C++ interface\nnumpy ≥ 1.23 - array and numerical operations\npackaging ≥ 23.0 - version and metadata management\n\n\n\nRequires R ≥ 4.2 and a working C++17 toolchain. All necessary C++ headers (Rcpp, Eigen) are bundled and linked automatically and no additional R dependencies need to be installed manually."
   },
   {
     "objectID": "api/index.html",
